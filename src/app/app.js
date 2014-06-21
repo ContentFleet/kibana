@@ -31,7 +31,7 @@ function (angular, $, _, appLevelRequire) {
   app.constant('kbnVersion',"@REV@");
 
   // The minimum version that must be in the cluster
-  app.constant('esMinVersion','0.90.9');
+  app.constant('esMinVersion','0.90.1');
 
   // Use this for cache busting partials
   app.constant('cacheBust',"cache-bust="+Date.now());
