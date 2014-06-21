@@ -16,8 +16,7 @@ define([
   'app',
   'lodash',
   'jquery',
-  'kbn',
-  'jquery.justifiedGallery'
+  'kbn'
 ],
 function (angular, app, _, $, kbn) {
   'use strict';
