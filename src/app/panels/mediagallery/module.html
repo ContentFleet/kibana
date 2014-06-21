@@ -1,0 +1,42 @@
+<div ng-controller='mediagallery' ng-init="init()">
+  <style>
+
+    .terms-wrapper {
+      display: table;
+      width: 100%;
+    }
+
+    .wall a {
+      float: left;
+      margin: 2px;
+      background-size: cover;
+      background-position: center;
+      width: 200px !important;
+      height: 150px !important;
+      position: relative;
+    }
+
+    .wall a .label {
+      width: 100px;
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50px;
+    }
+
+  </style>
+
+
+  <div class="terms-wrapper">
+
+    <!-- CHART -->
+    <div ng-show="panel.chart == 'pie' || panel.chart == 'bar'" terms-chart params="{{panel}}" style="position:relative" class="pointer terms-chart">
+    </div>
+
+    <div class="wall">
+      <a ng-repeat="term in data" href="{{term.label}}" target="_blank" style="background-image: url({{term.label}})">
+        <span class="label">{{term.data[0][1]}} Tweets</span>
+      </a>
+    </div>
+
+</div>
