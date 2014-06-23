@@ -18,7 +18,7 @@ define([
   'jquery',
   'kbn'
 ],
-function (angular, app, _, $, kbn) {
+function (angular, app, _) {
   'use strict';
 
   var module = angular.module('kibana.panels.mediagallery', []);
@@ -226,12 +226,10 @@ function (angular, app, _, $, kbn) {
 
   });
 
-  module.directive('termsChart', function(querySrv) {
+  module.directive('termsChart', function() {
     return {
       restrict: 'A',
-      link: function(scope, elem) {
-        var plot;
-
+      link: function(scope) {
         // Receive render events
         scope.$on('render',function(){
           render_panel();
