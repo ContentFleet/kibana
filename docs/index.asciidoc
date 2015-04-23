@@ -1,15 +1,22 @@
-= Kibana
+[[kibana-guide]]
+= Kibana User Guide
 
-== Introduction
+:ref: http://www.elastic.co/guide/en/elasticsearch/reference/current
 
-Kibana is an open source (Apache Licensed), browser based analytics and search dashboard for
-ElasticSearch. Kibana is a snap to setup and start using. Written entirely in HTML and Javascript
-it requires only a plain webserver, Kibana requires no fancy server side components.
-Kibana strives to be easy to get started with, while also being flexible and powerful, just like
-Elasticsearch.
+include::introduction.asciidoc[]
 
-include::./tutorials/tutorials.asciidoc[]
+include::setup.asciidoc[]
 
-include::./kibana/configuration/config.js.asciidoc[]
+include::access.asciidoc[]
 
-include::./kibana/panels.asciidoc[]
+include::discover.asciidoc[]
+
+include::visualize.asciidoc[]
+
+include::dashboard.asciidoc[]
+
+include::settings.asciidoc[]
+
+include::production.asciidoc[]
+
+include::whats-new.asciidoc[]

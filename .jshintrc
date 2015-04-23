@@ -1,35 +1,27 @@
 {
-  "browser": true,
+  // for files at project root
+  "node": true,
 
-  "bitwise":false,
-  "curly": true,
+  // shared with .jshintrc files for browser and node
+  "unused": false,
+  "bitwise": false,
   "eqnull": true,
-  "globalstrict": true,
-  "devel": true,
   "eqeqeq": true,
-  "forin": false,
+  "forin": true,
   "immed": true,
-  "supernew": true,
   "expr": true,
-  "indent": 2,
-  "latedef": true,
-  "newcap": true,
+  "latedef": "nofunc",
   "noarg": true,
   "noempty": true,
   "undef": true,
+  "quotmark": "single",
+  "plusplus": false,
   "boss": true,
-  "trailing": false,
   "laxbreak": true,
   "laxcomma": true,
+  "validthis": true,
   "sub": true,
-  "unused": true,
-
-  "maxlen": 140,
-
-  "globals": {
-    "define": true,
-    "require": true,
-    "Chromath": false,
-    "jsonPath": false
-  }
+  "-W084": true,
+  "scripturl": true,
+  "evil": true
 }
